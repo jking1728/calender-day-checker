@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Weekday</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Day Checker</h1>
+      </div>
+      <form id="userDate" action="index.html" method="post">
+        <label>
+          Month
+        <select id="month">
+          <option value="0">January</option>
+          <option value="1">February</option>
+          <option value="2">March</option>
+          <option value="3">April</option>
+          <option value="4">May</option>
+          <option value="5">June</option>
+          <option value="6">July</option>
+          <option value="7">August</option>
+          <option value="8">September</option>
+          <option value="9">October</option>
+          <option value="10">November</option>
+          <option value="11">December</option>
+        </select>
+        </label>
+        <label>
+          Day
+        <input type="number" id="day" min="1" max="31">
+        </label>
+        <label>
+          Year
+        <input type="number" id="year" min="1">
+        </label>
+        <button type="submit">submit</button>
+      </form>
+      <br>
+      <div id="result">
+        <p>The day you inputed is <span id="outputDay"></span>
+      </div>
+
+    </div>
+  </body>
+</html>

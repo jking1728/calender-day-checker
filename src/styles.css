@@ -1,0 +1,12 @@
+body {
+  background-color: #7FDBFF;
+}
+#result {
+  display: none;
+}
+#day, #year {
+  width: 100px;
+}
+.jumbotron {
+  text-align: center;
+}
