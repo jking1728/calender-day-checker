@@ -9,8 +9,8 @@ describe('Day function', () => {
 });
 describe('Check Valid', () => {
   test('should check if the date is a valid date', () =>{
-    let input = new Year (2016)
+    let input = new Year (2001)
     input.checkLeapYear();
-    expect(checkValid(3, 31, 2016)).toEqual(false)
+    expect(checkValid(1, 29, input)).toEqual(false)
   });
 });

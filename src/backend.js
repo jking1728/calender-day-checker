@@ -1,6 +1,6 @@
 export function Year (year){
-  this.year = year
-  this.isLeapYear = false
+  this.year = year;
+  this.isLeapYear = '';
 }
 
 Year.prototype.checkLeapYear = function () {
@@ -12,20 +12,20 @@ Year.prototype.checkLeapYear = function () {
 };
 
 export let getDay = function (date){
-  let dateStr = date.toString()
-  let day = dateStr.slice(0,3)
+  let dateStr = date.toString();
+  let day = dateStr.slice(0,3);
   if (day === "Wed") {
-    return (day + "nesday")
+    return (day + "nesday");
   } else if (day === "Thu") {
-    return (day + "rsday")
+    return (day + "rsday");
   } else if (day === "Tue") {
-    return (day + "sday")
+    return (day + "sday");
   } else if (day === "Sat") {
-    return (day + "urday")
+    return (day + "urday");
   } else {
-    return (day + "day")
+    return (day + "day");
   }
-}
+};
 export let checkValid = function (month, day, year){
   if ((month === 3) || (month === 5) || (month === 8) || (month === 10) && (day === 31)) {
     return false;
@@ -36,4 +36,4 @@ export let checkValid = function (month, day, year){
   } else {
     return true;
   }
-}
+};
